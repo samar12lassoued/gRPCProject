@@ -27,7 +27,8 @@ MQTT and ModBus TCP
    1.  MQTT
    2.  ModBusTCP 
    
-   
+ ![PlateformeschemaGlobal](https://user-images.githubusercontent.com/73782851/164945148-e084b1f4-064e-4584-ace7-98b9d2291736.jpg)
+  
 
 
 
