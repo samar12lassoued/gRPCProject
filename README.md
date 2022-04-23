@@ -21,7 +21,7 @@ the transfer of data exchanged between the servers and the clients .
      7.BLE
      
 In this project we implemented just __2 protocols__ which are :
-__MQTT__ and ModBus __TCP__ 
+__MQTT__ and __ModBus TCP__ 
 
 
 **Implemented Protocls :
