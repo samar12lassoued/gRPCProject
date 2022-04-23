@@ -1,10 +1,10 @@
 __Author__== Samar Lassoued
 
 
-###### gRPCProject
+###### __gRPCProject__
 
-***This is a Multiprotocol Platform that works as  a Gateway that 
- implements different protocols ***
+***__This is a Multiprotocol Platform that works as  a Gateway that 
+ implements different protocols__ ***
 
 
 THis platform is based mainly on gRPC that gurantees the communication and 
