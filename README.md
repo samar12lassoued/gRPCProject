@@ -31,22 +31,22 @@ MQTT and ModBus TCP
    
  Main Actors of this Gateway are :
  
-**ModBus TCP Client :
+**__ModBus TCP Client__ :
       This actor will initiate the communication in the platform after receiving the data from the 
      ModBus TCP server .
      
-**MQTT Server:
+**__MQTT Server__:
       This actor provides the main service in the platform which is  to publish the
       data received into  the Mosquitto Broker. It makes the link between the ModBus TCP client
       and the Broker :it  is like a Gateway.
  
-**ConfigManager Server:
+**__ConfigManager Server__:
      This actor provides an essential service for the launch of any client or
      server present in the platform. In fact, any client or server before
      starting the communication, he must send a request to this server to 
      provide him with the necessary connection parameters.
      
-**ModBus TCP Server:
+**__ModBus TCP Server__:
     This actor is the starting point of the communication, it is this one who
     allows the ModBus TCP client to acquire the data.
  
