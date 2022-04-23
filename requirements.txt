@@ -1,0 +1,7 @@
+
+grpcio==1.45.0
+grpcio-tools==1.45.0
+paho-mqtt==1.6.1
+protobuf==3.6.1
+pyModbusTCP==0.1.10
+
