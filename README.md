@@ -1,12 +1,11 @@
-# gRPCProject
+__Author__== Samar Lassoued
+
+
+###### gRPCProject
 
 ***This is a Multiprotocol Platform that works as  a Gateway that 
  implements different protocols ***
 
-
-__Author__== Samar Lassoued
-
-__Email__== samarlassoued2018@gmail.com | samar.lassoued@ENICAR.ucar.tn
 
 THis platform is based mainly on gRPC that gurantees the communication and 
 the transfer of data exchanged between the servers and the clients .
@@ -19,6 +18,9 @@ the transfer of data exchanged between the servers and the clients .
      5.ZigBee
      6.LoRa
      7.BLE
+     
+In this project we implemented just 2 protocols which are :
+MQTT and ModBus TCP 
 
 
 **Implemented Protocls :
