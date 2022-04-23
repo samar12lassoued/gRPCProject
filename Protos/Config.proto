@@ -1,0 +1,28 @@
+syntax="proto3";
+
+package Configuration;
+
+service ConfigManager {
+
+    rpc getConfig (Protocolrequest)  returns (ProtocolConfig);
+    rpc setConfig (ConfigParameters) returns (ProtocolSetting);
+}
+
+message Protocolrequest {
+    string Protocolname=1;
+
+
+}
+message ProtocolConfig {
+   int32 Port=1;
+   string adresse=2;
+}
+
+message ConfigParameters {
+   int32 Port=1;
+   string adresse=2; 
+}
+message ProtocolSetting {
+    string response=1;
+
+}
