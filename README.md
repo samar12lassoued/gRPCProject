@@ -4,7 +4,7 @@
 it implements different protocols ***
 
 
-__Author__== 'Samar Lassoued''
+__Author__== Samar Lassoued
 
-__Email__== 'samarlassoued2018@gmail.com'/'samar.lassoued@ENICAR.ucar.tn'
+__Email__== samarlassoued2018@gmail.com /samar.lassoued@ENICAR.ucar.tn
 
