@@ -8,5 +8,10 @@ __Author__== Samar Lassoued
 
 __Email__== samarlassoued2018@gmail.com | samar.lassoued@ENICAR.ucar.tn
 
+**Implemented Protocls :
+   -MQTT
+   -ModBusTCP 
+   
+
 
 
