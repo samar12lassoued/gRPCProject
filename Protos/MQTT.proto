@@ -1,1 +1,21 @@
+syntax= "proto3";
 
+package MQTTFunction;
+
+service MQTTManager {
+
+rpc PublishMessages (ComingData) returns (ACKPublish) {}
+
+}
+
+message ComingData {
+
+    string Topic=1;
+    string Payload=2;
+    int32  Qos=3;
+    
+}
+
+message ACKPublish {
+      string Acknowledgment=1;
+}
