@@ -8,7 +8,7 @@ import time
 import Config_pb2
 import Config_pb2_grpc
 
-global ACKK 
+
 
 
 def onconnect(client,userdata,flags,rc):
