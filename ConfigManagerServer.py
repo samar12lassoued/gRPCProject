@@ -30,9 +30,7 @@ class ConfigManagerServicer(Config_pb2_grpc.ConfigManagerServicer):
                 port1=data1['port']
 
         else:
-            #context.set_code()
-            #grpc.ServicerContext.abort('notoj','repeat')
-            #raise Exception("Try Again")
+            
             adresse1='Try Again please!'
             port1=00000000000000000
             
