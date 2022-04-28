@@ -1,0 +1,39 @@
+syntax= "proto3";
+
+package MQTTFunction;
+
+service MQTTManager {
+
+rpc PublishMessages (ComingData) returns (ReturnType) {}
+
+}
+
+enum state {
+        PublishSuccess=0;
+        Publish_Success=1;
+        PublishFailed=2;
+        Connexion_Lost=3;
+        Client_NOT_Connected=4;
+        Client_Connected=5;
+        Incorrect_Proto_Version=6;
+        Bad_Client_ID=7;
+        Server_Unvailable=8;
+        Bad_User_Pw=9;
+        Not_AUTH=10;
+        }
+
+message ComingData {
+
+    string Topic=1;
+    string Payload=2;
+    int32  Qos=3;
+    
+}
+
+message ReturnType {
+    
+    
+    state Acknowledgment=1;
+}
+
+
