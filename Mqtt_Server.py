@@ -15,22 +15,22 @@ def onconnect(client,userdata,flags,rc):
    
     if  rc==0:
         print('client connnected OK')
-        return(rc)
+        
     elif rc==1:
         print('Connection Refused :incorrect protocol version ')
-        return(rc)
+       
     elif rc==2:
         print('Connection refused:bad client id')
-        return(rc)
+        
     elif rc==3:
         print('Connection refused:Server unvailable')
-        return(rc)
+        
     elif rc==4:
         print('Connection refused:bad username or password')
-        return(rc)
+        
     else :
         print('Connection refussed:not authorized')
-        return(rc)
+    return(rc)
 
 
 
@@ -122,6 +122,7 @@ c1=Parameters.__getattribute__('Port')
 
 Mqttclient= mqtt.Client("grpc",clean_session=False)
 Mqttclient.on_connect=onconnect
+Mqttclient.loop_start()
 Mqttclient.connect(c,c1)
 
 main()
