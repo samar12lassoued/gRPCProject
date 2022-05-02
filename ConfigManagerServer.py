@@ -1,10 +1,10 @@
 
 import grpc
-import Config_pb2
-import Config_pb2_grpc
+from lib import Config_pb2
+from lib import Config_pb2_grpc
 from concurrent import futures
 import json 
-from pprint import pprint
+
 
 #file1="modbusTCP.json"
 #file2="mqtt.json"
