@@ -5,6 +5,7 @@ from lib import Config_pb2_grpc
 from concurrent import futures
 import json 
 import logging
+import Config
 
 
 logging.basicConfig(level=logging.INFO,format='%(asctime)s:%(message)s')
@@ -16,7 +17,7 @@ class ConfigManagerServicer(Config_pb2_grpc.ConfigManagerServicer):
         ProtocolName=request.Protocolname
         
         if ProtocolName=='MQTT':
-            with open('Config.json','r') as jsonfile1:
+            with open('Config/Config.json','r') as jsonfile1:
                 data= json.load(jsonfile1)
                 adresse1=data["MQTT"]['BrokerAdress']
                 port1=data["MQTT"]['port']
@@ -24,7 +25,7 @@ class ConfigManagerServicer(Config_pb2_grpc.ConfigManagerServicer):
 
 
         elif ProtocolName=='MODBUSTCP':
-            with open('Config.json','r') as jsonfile1:
+            with open('Config/Config.json','r') as jsonfile1:
                 data= json.load(jsonfile1)
                 adresse1=data["ModBusTCP"]['ServerAdress']
                 port1=data["ModBusTCP"]['port']
