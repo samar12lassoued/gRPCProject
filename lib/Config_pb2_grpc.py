@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import Config_pb2 as Config__pb2
+from lib import Config_pb2 as Config__pb2
 
 
 class ConfigManagerStub(object):
