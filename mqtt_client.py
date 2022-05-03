@@ -1,8 +1,8 @@
 #This is a simple Mqtt client for Test
 
 import grpc
-import mqtt_pb2_grpc
-import mqtt_pb2
+from lib import mqtt_pb2_grpc
+from lib import mqtt_pb2
 
 def run():
     with grpc.insecure_channel('localhost:50051') as channel :
