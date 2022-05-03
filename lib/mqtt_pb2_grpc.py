@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import mqtt_pb2 as mqtt__pb2
+from lib import mqtt_pb2 as mqtt__pb2
 
 
 class MQTTManagerStub(object):
