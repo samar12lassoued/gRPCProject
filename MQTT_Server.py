@@ -55,7 +55,7 @@ Parameters2= Config_pb2.ProtocolConfig()
 #It allows the client to get its  Configuration Parameters to connect
 class Mqtt_Config():
     def run():
-        global c,c1
+        global server_host,server_port
         with grpc.insecure_channel('localhost:50052') as channel :
             Config_pb2_grpc.ConfigManagerStub(channel)
             Conf_stub= Config_pb2_grpc.ConfigManagerStub(channel)
@@ -63,9 +63,9 @@ class Mqtt_Config():
             Protocolname1=input()
             Protocolname2=Protocolname1.upper()
             Parameters= Conf_stub.getConfig(Config_pb2.Protocolrequest(Protocolname=Protocolname2))
-            c=Parameters.__getattribute__('adresse')
-            c1=Parameters.__getattribute__('Port')
-        logging.info('Configuration Parameters are {}:{}'.format(c,c1))
+            server_host=Parameters.__getattribute__('adresse')
+            server_port=Parameters.__getattribute__('Port')
+        logging.info('Configuration Parameters are {}:{}'.format(server_host,server_port))
         return Parameters
 
 
@@ -130,21 +130,24 @@ def main_Mqtt():
 #Getting the Connection parameters from the Config Server
 Parameters=Mqtt_Config.run()
 Parameters2=Parameters
-c=Parameters.__getattribute__('adresse')
-c1=Parameters.__getattribute__('Port')
+server_host=Parameters.__getattribute__('adresse')
+server_port=Parameters.__getattribute__('Port')
 
 #Creating the MqttClient and starting the process of connection   
 
 Mqttclient= mqtt.Client("grpc",clean_session=False)
 Mqttclient.on_connect=onconnect
-
 Mqttclient.loop_start()
-Mqttclient.connect(c,c1)
+Mqttclient.connect(server_host,server_port)
 
 
 
 #Calling the Mqtt Server   
+
+
 main_Mqtt()
+   
+    
 
    
 
