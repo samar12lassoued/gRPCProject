@@ -14,6 +14,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     # start modbus server
     server = ModbusServer(host=args.host, port=args.port)
-    print('server starts ')
+    print('Modbus server starts ')
     server.start()
 
