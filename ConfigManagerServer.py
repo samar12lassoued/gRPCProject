@@ -17,15 +17,16 @@ class ConfigManagerServicer(Config_pb2_grpc.ConfigManagerServicer):
         ProtocolName=request.Protocolname
         
         if ProtocolName=='MQTT':
-            with open('Config/Config.json','r') as jsonfile1:
+            with open('Config.json','r') as jsonfile1:
                 data= json.load(jsonfile1)
                 adresse1=data["MQTT"]['BrokerAdress']
                 port1=data["MQTT"]['port']
                 
 
+      
 
-        elif ProtocolName=='MODBUSTCP':
-            with open('Config/Config.json','r') as jsonfile1:
+        elif ProtocolName=='ModBusTCP':
+            with open('Config.json','r') as jsonfile1:
                 data= json.load(jsonfile1)
                 adresse1=data["ModBusTCP"]['ServerAdress']
                 port1=data["ModBusTCP"]['port']
