@@ -1,0 +1,12 @@
+[Unit]
+Description= Config Manager Service
+
+
+[Service]
+User=samar
+WorkingDirectory=/home/samar/MultiprotocolGateway
+ExecStart=/usr/bin/python3  /home/samar/MultiprotocolGateway/ConfigManagerServer.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
