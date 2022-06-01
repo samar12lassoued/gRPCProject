@@ -1,0 +1,13 @@
+[Unit]
+Description= MQTT Manager Service
+After=Config_Manager.service
+Requires=Config_Manager.service
+
+[Service]
+User=samar
+WorkingDirectory=/home/samar
+ExecStart=/usr/bin/python3  /home/samar/MultiprotocolGateway/MQTT_Server.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
