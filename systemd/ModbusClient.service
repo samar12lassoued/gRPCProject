@@ -1,0 +1,15 @@
+[Unit]
+Description=MODBUS TCP Client Service
+After=Mqtt_Manager.service
+After=Config_Manager.service
+Requires=Config_Manager.service
+Requires=Mqtt_Manager.service
+
+[Service]
+User=root
+WorkingDirectory=/home/samar/MultiprotocolGateway
+ExecStart=/usr/bin/python3 /home/samar/MultiprotocolGateway/modbus_client.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
