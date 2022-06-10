@@ -5,9 +5,9 @@ from pymodbus.client.sync import ModbusTcpClient as ModbusClient
 import grpc
 
 # MQTT gRPC library
- import mqtt_pb2
- import mqtt_pb2_grpc
- import Config_pb2 
+import mqtt_pb2
+import mqtt_pb2_grpc
+import Config_pb2 
 import Config_pb2_grpc 
 Parameters=Config_pb2.ProtocolConfig()
 # Tools
