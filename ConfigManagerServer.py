@@ -1,7 +1,7 @@
 
 import grpc
-from lib import Config_pb2
-from lib import Config_pb2_grpc
+import Config_pb2
+import Config_pb2_grpc
 from concurrent import futures
 import json 
 import logging
