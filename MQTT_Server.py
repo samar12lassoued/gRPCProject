@@ -2,10 +2,10 @@
 
 #Importing the gRPC library
 import grpc
-from lib import mqtt_pb2
-from lib import mqtt_pb2_grpc
-from lib import Config_pb2
-from lib import Config_pb2_grpc
+import mqtt_pb2
+import mqtt_pb2_grpc
+import Config_pb2
+import Config_pb2_grpc
 
 #Importing the MQTT library 
 import paho.mqtt.client as mqtt
