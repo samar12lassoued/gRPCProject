@@ -1,13 +1,13 @@
 {
     "MQTT" : {
      
-          "BrokerAdress":"127.0.0.1",
+          "BrokerAdress":"fe80::619c:9b00:1ba8:e581",
           "port":1883
     },
 
     "ModBusTCP" : {
         
-        "ServerAdress":"127.0.0.1",
+        "ServerAdress":"fe80::619c:9b00:1ba8:e581",
         "port":5020
     }
 
