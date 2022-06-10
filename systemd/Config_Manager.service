@@ -3,9 +3,9 @@ Description= Config Manager Service
 
 
 [Service]
-User=samar
-WorkingDirectory=/home/samar/MultiprotocolGateway
-ExecStart=/usr/bin/python3  /home/samar/MultiprotocolGateway/ConfigManagerServer.py
+User=root
+WorkingDirectory=/opt/MultiprotocolGateway
+ExecStart=/usr/bin/python3  /opt/MultiprotocolGateway/ConfigManagerServer.py
 Restart=on-failure
 
 [Install]
