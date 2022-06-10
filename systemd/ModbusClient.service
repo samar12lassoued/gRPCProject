@@ -7,8 +7,8 @@ Requires=Mqtt_Manager.service
 
 [Service]
 User=root
-WorkingDirectory=/home/samar/MultiprotocolGateway
-ExecStart=/usr/bin/python3 /home/samar/MultiprotocolGateway/modbus_client.py
+WorkingDirectory=/opt/MultiprotocolGateway
+ExecStart=/usr/bin/python3 /opt/MultiprotocolGateway/modbus_client.py
 Restart=on-failure
 
 [Install]
