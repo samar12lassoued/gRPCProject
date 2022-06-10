@@ -59,10 +59,7 @@ class Mqtt_Config():
         with grpc.insecure_channel('localhost:50052') as channel :
             Config_pb2_grpc.ConfigManagerStub(channel)
             Conf_stub= Config_pb2_grpc.ConfigManagerStub(channel)
-            logging.info("What's the protocol Name?\nPlease type Mqtt or ModbusTCP")
-            Protocolname1=input()
-            Protocolname2=Protocolname1.upper()
-            Parameters= Conf_stub.getConfig(Config_pb2.Protocolrequest(Protocolname=Protocolname2))
+            Parameters= Conf_stub.getConfig(Config_pb2.Protocolrequest(Protocolname="MQTT"))
             server_host=Parameters.__getattribute__('adresse')
             server_port=Parameters.__getattribute__('Port')
         logging.info('Configuration Parameters are {}:{}'.format(server_host,server_port))
@@ -148,7 +145,3 @@ Mqttclient.connect(server_host,server_port)
 main_Mqtt()
    
     
-
-   
-
-
