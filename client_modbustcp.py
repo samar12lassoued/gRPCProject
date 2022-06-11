@@ -15,7 +15,7 @@ Parameters=Config_pb2.ProtocolConfig()
 import logging 
 logging.basicConfig(level=logging.INFO,format='%(asctime)s:%(message)s')
 # Default modbus server
-MODBUS_SERVER_HOST = "localhost"
+MODBUS_SERVER_HOST = "10.0.2.15"
 MODBUS_SERVER_PORT = 5020
 class Modbus_Config():
     def run():
