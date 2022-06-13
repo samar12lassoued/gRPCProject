@@ -24,7 +24,7 @@ def run_server():
     identity.MajorMinorRevision = '1.1'
 
     logging.info ("[ModbusTCP] Starting Server ..")
-    StartTcpServer(context, identity=identity, address=("10.42.0.57", 5020))
+    StartTcpServer(context, identity=identity, address=("10.42.0.1", 5020))
 
 if __name__ == "__main__":
     run_server()
