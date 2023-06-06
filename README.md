@@ -24,7 +24,7 @@ In this project we implemented just __2 protocols__ which are :
 __MQTT__ and __ModBus TCP__ 
 
 
-**Implemented Protocls :
+**Implemented Protocols :
    1.  MQTT
    2.  ModBusTCP 
    
