@@ -18,7 +18,6 @@ def run_server():
     identity = ModbusDeviceIdentification()
     identity.VendorName = 'DATAKOM WATER METER/VALVE SIMULATOR'
     identity.ProductCode = 'DATAKOM DKM-407'
-    identity.VendorUrl = 'https://sofia-technologies.com/'
     identity.ProductName = 'Water meter/valve'
     identity.ModelName = 'Water valve/meter DATAKOM DKM-407'
     identity.MajorMinorRevision = '1.1'
